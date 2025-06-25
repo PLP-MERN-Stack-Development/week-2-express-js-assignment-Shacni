@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+
 const {
   getProducts,
   getProductById,
@@ -7,8 +8,9 @@ const {
   updateProduct,
   deleteProduct,
   searchProducts,
-  get Stats
-} = require('../controllers/controllers/productController');
+  getStats
+} = require('../controllers/productcontroller');
+
 const validateProduct = require('../middleware/validateProduct');
 const authenticate = require('../middleware/auth');
 
